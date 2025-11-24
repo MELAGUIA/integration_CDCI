@@ -30,7 +30,7 @@ jobs:
 
   # ────────────────────── 3. CD – Déploiement Render (FIXED - No if conditions on secrets) ──────────────────────
   deploy-render:
-    needs: [collection-1]
+    needs: [collection]
     runs-on: ubuntu-latest
     name: CD - Déploiement Auto → Render
     if: ${{ github.ref == 'refs/heads/main' && github.event_name == 'push' }}
