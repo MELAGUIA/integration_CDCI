@@ -19,7 +19,7 @@ jobs:
       - run: npm install -g @usebruno/cli
       - name: Run Collection 1
         run: |
-          bru run "collections \
+          bru run collections \
             --env-file environments/Collection_env.bru \
             --format html \
             --output report-collection.html
